@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_game")
 public class Game {
-    // ATRIBUTOS
+   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -31,7 +31,7 @@ public class Game {
     @Column(columnDefinition = "TEXT")
     private String longDescription;
 
-    // MÉTODOS
+   
     public Game() {
 
     }
@@ -49,7 +49,7 @@ public class Game {
         this.longDescription = longDescription;
     }
 
-    // MÉTODOS ESPECIAIS
+    
     public long getId() {
         return this.id;
     }
