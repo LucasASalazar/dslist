@@ -3,14 +3,13 @@ package com.devsuperior.dslist.dto;
 import  com.devsuperior.dslist.entities.Game;
 
 public class GameMinDTO {
-    //ATRIBUTOS
+ 
     private long id;
     private String title;
     private Integer year;
     private String imgUrl;
     private String shortDescription;
 
-    //MÉTODOS
     public GameMinDTO(){
     }
 
@@ -22,7 +21,6 @@ public class GameMinDTO {
       shortDescription = entity.getShortDescription();
     }
 
-    //MÉTODOS ESPECIAIS
     public long getId(){
         return id;
     }
